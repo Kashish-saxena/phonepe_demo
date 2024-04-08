@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - phonepe_payment_sdk (1.1.0):
+    - Flutter
+    - PhonePePayment (= 2.7.3)
+  - PhonePePayment (2.7.3)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - phonepe_payment_sdk (from `.symlinks/plugins/phonepe_payment_sdk/ios`)
+
+SPEC REPOS:
+  trunk:
+    - PhonePePayment
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  phonepe_payment_sdk:
+    :path: ".symlinks/plugins/phonepe_payment_sdk/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  phonepe_payment_sdk: 62696b0fa1265e9c5111ff0af49eda3cb5d58012
+  PhonePePayment: 13abece65df5d9ca6f976b001e7a91112b5c2107
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.15.2
