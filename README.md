@@ -1,16 +1,24 @@
-# phone_pe_demo
+# PhonePe Demo
 
-A new Flutter project.
+This Flutter app showcases the implementation of phonepe’s payment SDK.
 
-## Getting Started
+# Working Demo
 
-This project is a starting point for a Flutter application.
+<table>
+<tr>
+<td><img src="https://github.com/Kashish-saxena/Flutter_gemini_demo/blob/master/media/gemini_demo.gif" height="480px"></td>
+</tr>
+</table>
 
-A few resources to get you started if this is your first Flutter project:
+## Android Screenshots
+<table>
+<tr>
+<td><img src="https://github.com/Kashish-saxena/Flutter_gemini_demo/blob/master/screenshots/image_screenshot.png" height="480px"></td>
+<td><img src="https://github.com/Kashish-saxena/Flutter_gemini_demo/blob/master/screenshots/text_screenshot.png" height="480px"></td>
+</tr>
+</table>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation 
+run: $git clone https://github.com/Kashish-saxena/Flutter_gemini_demo.git <br />
+run: $flutter pub get <br />
+run: $flutter run

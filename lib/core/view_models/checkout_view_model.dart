@@ -7,6 +7,7 @@ import 'package:phone_pe_demo/core/view_models/base_model.dart';
 import 'package:phonepe_payment_sdk/phonepe_payment_sdk.dart';
 
 class CheckoutViewModel extends BaseModel {
+  String jsonString="";
   Object? result;
   String environmentValue = 'SANDBOX';
   String appId = "";
@@ -39,7 +40,7 @@ class CheckoutViewModel extends BaseModel {
         "type": "PAY_PAGE",
       }
     };
-    String jsonString = jsonEncode(data);
+    jsonString = jsonEncode(data);
     const saltkey = "099eb0cd-02cf-4e2a-8aca-3e6c6aff0399";
     const apiEndPoint = "/pg/v1/pay";
     const saltIndex = "1";
@@ -48,7 +49,7 @@ class CheckoutViewModel extends BaseModel {
     String sHA256 = generateSha256Hash(dataToHash);
 
     debugPrint(base64Data);
-    debugPrint('#' * 10);
+    debugPrint("SHA256>>>>>>>>$sHA256");
     debugPrint("$sHA256###$saltIndex");
     String body = base64Data;
     String checksum = "$sHA256###$saltIndex";
@@ -108,6 +109,15 @@ class CheckoutViewModel extends BaseModel {
       updateUI();
     }
   }
+
+  // void _increament(){
+  //   counter++;
+  // updateUI();
+  // }
+  // void _decreament(){
+  //   counter--;
+  //   updateUI();
+  // }
 }
 
 extension EncodingExtensions on String {
